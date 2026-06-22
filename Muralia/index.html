@@ -43,7 +43,6 @@
 </head>
 <body class="overflow-x-hidden">
 
-<!-- NAV -->
 <nav class="fixed w-full z-50 px-8 py-5 flex justify-between bg-[#0a0a0a]/90 backdrop-blur border-b border-[var(--hairline)]">
   <div class="font-display text-xl tracking-widest">MURALIA<span class="text-gold">.</span></div>
   <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest text-[var(--muted)]">
@@ -53,11 +52,9 @@
   </div>
 </nav>
 
-<!-- HERO: Background Video Live -->
 <section id="agency" class="relative h-screen w-full flex items-center px-8 md:px-16 overflow-hidden">
-  <!-- Video Tag med det præcise filnavn og poster-billede som sikring -->
   <video autoplay loop muted playsinline preload="auto" poster="725584167_1048809714166554_1633473090183491681_n.jpg" class="absolute inset-0 w-full h-full object-cover opacity-25">
-    <source src="video_mp4.mp4" type="video/mp4">
+    <source src="video.mp4.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
   
@@ -71,7 +68,6 @@
   </div>
 </section>
 
-<!-- ROSTER: The Artists -->
 <section id="kunstnere" class="py-24 px-8 md:px-16 border-t border-[var(--hairline)] bg-[#0d0d0d]">
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -84,7 +80,6 @@
     
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Artist 1: Jens Stentoft -->
       <a href="jens-stentoft.html" class="artist-card bg-[#0a0a0a] border border-[var(--hairline)] p-6 group cursor-pointer block hover:no-underline">
         <div class="h-64 overflow-hidden mb-6 relative">
           <img src="725032751_1528523512018280_8335387876143611394_n.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
@@ -98,18 +93,16 @@
         <div class="text-xs uppercase tracking-widest text-gold group-hover:text-ivory transition">Gå til kunstnerens underside &rarr;</div>
       </a>
 
-      <!-- Artist 2: Placeholder indicating growth -->
       <div class="artist-card flex flex-col items-center justify-center bg-[#0a0a0a] border border-dashed border-[var(--hairline)] p-6 min-h-[450px]">
         <div class="text-[var(--hairline)] text-6xl mb-4 font-light">+</div>
         <h3 class="font-display text-xl text-[var(--muted)] mb-2">Ny Kunstner</h3>
-        <p class="text-[#555] text-sm text-center max-w-[250px]">Platformen er bygget til at skalere. Here vil den næste kunstner i stalden blive præsenteret med sin egen SEO-optimerede underside.</p>
+        <p class="text-[#555] text-sm text-center max-w-[250px]">Platformen er bygget til at skalere. Her vil den næste kunstner i stalden blive præsenteret med sin egen SEO-optimerede underside.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- THE AGENCY GALLERY -->
 <section id="galleri" class="py-24 px-8 md:px-16 bg-[#0a0a0a]">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-16">
@@ -118,7 +111,6 @@
     </div>
     
     <div class="masonry">
-      <!-- De nye AI-genererede mesterværker -->
       <div class="masonry-item overflow-hidden relative group">
         <img src="12123124412ff.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
       </div>
@@ -135,7 +127,6 @@
         <img src="WhatsApp Image 2026-06-22 at 16.21.51.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
       </div>
       
-      <!-- Det originale gavl-materiale -->
       <div class="masonry-item overflow-hidden relative group">
         <img src="726431709_2153635502098565_6640533374163241531_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
       </div>
@@ -152,7 +143,6 @@
   </div>
 </section>
 
-<!-- AGENCY FOOTER -->
 <footer class="py-20 border-t border-[var(--hairline)] text-center bg-[#050505]">
   <div class="max-w-3xl mx-auto px-6">
     <h2 class="font-display text-4xl mb-6">Skal vi forvandle jeres projekt?</h2>
