@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jens Stentoft — MURALIA Artist Profile</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2 family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --gold: #D4AF6A;
+    --gold-deep: #8B7340;
+    --ivory: #F4F1EA;
+    --muted: #9C968A;
+    --hairline: rgba(212,175,106,0.18);
+  }
+  body {
+    background: var(--bg);
+    color: var(--ivory);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  .font-display { font-family: 'Playfair Display', serif; }
+  .text-gold { color: var(--gold); }
+  
+  .glow-btn { border: 1px solid var(--gold-deep); transition: all 0.3s; }
+  .glow-btn:hover { box-shadow: 0 0 15px rgba(212,175,106,0.3); border-color: var(--gold); }
+  
+  .meta-box { border-left: 2px solid var(--gold); padding-left: 1rem; }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- MINI NAV -->
+<nav class="fixed w-full z-50 px-8 py-5 flex justify-between bg-[#0a0a0a]/90 backdrop-blur border-b border-[var(--hairline)]">
+  <a href="index.html" class="text-xs uppercase tracking-widest text-gold hover:text-ivory transition">&larr; Tilbage til Bureauet</a>
+  <div class="font-display text-xl tracking-widest">MURALIA<span class="text-gold">.</span></div>
+</nav>
+
+<!-- ARTIST HERO -->
+<section class="relative pt-32 pb-20 px-8 md:px-16 border-b border-[var(--hairline)]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+    
+    <!-- Profilbillede af Jens -->
+    <div class="md:col-span-4 flex justify-center">
+      <div class="w-full max-w-sm rounded-sm border border-[var(--hairline)] p-3 bg-[#111]">
+        <img src="JensStentoftWebEvan-702x1024.jpg" alt="Jens Stentoft" class="w-full h-auto object-cover rounded-sm">
+      </div>
+    </div>
+    
+    <!-- Info & Bio -->
+    <div class="md:col-span-8">
+      <p class="text-gold text-xs uppercase tracking-[0.3em] mb-2">Repræsentered Kunstner</p>
+      <h1 class="font-display text-4xl md:text-6xl mb-6">Jens Stentoft</h1>
+      
+      <div class="prose text-[var(--muted)] text-base leading-relaxed font-light space-y-6 max-w-2xl">
+        <p>
+          Jens Stentoft maler store figurative og realistiske malerier, som ofte har et glimt i øjet, en finurlig vinkel og et cartoony twist. Hans kreative arbejde kommer til udtryk gennem flere forskellige medier, men med sit primære og absolutte fokus på monumentale vægmalerier samt high-end tatoveringer.
+        </p>
+        <p>
+          Med mere end 15 års erfaring i bagagen har Jens transformeret alt fra massive industrisiloer og rå betonvægge til moderne erhvervsdomiciler over hele landet. Hans unikke evne ligger i at aflæse arkitekturen og skabe stedspecifik kunst, der integrerer sig naturligt med omgivelserne, uanset om opgaven kræver intens realisme eller legende, visuelle fortællinger.
+        </p>
+      </div>
+      
+      <!-- Erfaring Tags -->
+      <div class="flex flex-wrap gap-4 mt-8">
+        <span class="bg-[#111] border border-[var(--hairline)] text-xs uppercase tracking-widest px-4 py-2 text-ivory">Gavlmalerier</span>
+        <span class="bg-[#111] border border-[var(--hairline)] text-xs uppercase tracking-widest px-4 py-2 text-ivory">Stedspecifik Kunst</span>
+        <span class="bg-[#111] border border-[var(--hairline)] text-xs uppercase tracking-widest px-4 py-2 text-ivory">Erhverv &amp; Offentlig</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPOR AF KUNST (Lokationer) -->
+<section class="py-16 px-8 md:px-16 bg-[#0d0d0d] border-b border-[var(--hairline)]">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="font-display text-xl text-gold mb-8 tracking-wide">Udførte værker og geografisk aftryk</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+      <div class="meta-box"><p class="text-xs uppercase text-[var(--muted)] mb-1">Slagelse</p><p class="font-light text-ivory">Street Art Festival</p></div>
+      <div class="meta-box"><p class="text-xs uppercase text-[var(--muted)] mb-1">Nørrebro</p><p class="font-light text-ivory">SkyShowtime (Schmeichel)</p></div>
+      <div class="meta-box"><p class="text-xs uppercase text-[var(--muted)] mb-1">Gislinge</p><p class="font-light text-ivory">DLG Siloen (Monumental)</p></div>
+      <div class="meta-box"><p class="text-xs uppercase text-[var(--muted)] mb-1">København</p><p class="font-light text-ivory">Black Atlas &amp; Zoologisk Have</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED CASE: SLAGELSE -->
+<section class="py-24 px-8 md:px-16">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-gold text-xs uppercase tracking-[0.3em] mb-2">Fremhævet Værk</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-12">Gavlmaleri i Træskogården</h2>
+    
+    <div class="grid md:grid-cols-12 gap-12 items-start">
+      
+      <!-- Billedet af det vrede kvinde gavlmaleri -->
+      <div class="md:col-span-7">
+        <div class="border border-[var(--hairline)] rounded-sm p-2 bg-[#111]">
+          <img src="JensStentoftGavlmaleriWeb-qce1xf1nha51e5wbjcoan162e5woxv8dv9vc4kbi0w.jpg" alt="Slagelse Street Art - Vred Kvinde" class="w-full h-auto object-cover rounded-sm">
+        </div>
+      </div>
+      
+      <!-- Case Meta og info -->
+      <div class="md:col-span-5 space-y-8 bg-[#0d0d0d] border border-[var(--hairline)] p-8 rounded-sm">
+        <div>
+          <h4 class="font-display text-lg text-gold mb-4">Om projektet</h4>
+          <p class="text-sm text-[var(--muted)] leading-relaxed font-light">
+            Dette monumentale gavlmaleri forestiller en ekspressiv, vred kvinde, der bryder ud af facaden. Værket demonstrerer Jens' eminente evne til at kombinere intens, dramatisk realisme med rå kant og stor visuel gennemslagskraft i det offentlige rum.
+          </p>
+        </div>
+        
+        <div class="space-y-4 pt-4 border-t border-[var(--hairline)] text-xs tracking-wide">
+          <div class="flex justify-between"><span class="text-[var(--muted)] uppercase">Udgivet:</span><span class="text-ivory">22. februar 2024</span></div>
+          <div class="flex justify-between"><span class="text-[var(--muted)] uppercase">Anledning:</span><span class="text-ivory">Slagelse Street Art Festival 2021</span></div>
+          <div class="flex justify-between"><span class="text-[var(--muted)] uppercase">Lokation:</span><span class="text-ivory">Træskogården, 4200 Slagelse</span></div>
+          <div class="flex justify-between"><span class="text-[var(--muted)] uppercase">Ophav:</span><span class="text-ivory">Jens Stentoft, Danmark</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING / CONTACT FOR JENS -->
+<section class="py-20 border-t border-[var(--hairline)] text-center bg-[#050505]">
+  <div class="max-w-2xl mx-auto px-6">
+    <h3 class="font-display text-3xl mb-4">Ønsker du et værk af Jens Stentoft?</h3>
+    <p class="text-[var(--muted)] text-sm mb-10 font-light">
+      MURALIA varetager alle projektforespørgsler, kontrakter og logistik for Jens. Kontakt os med jeres idé og væg-dimensioner, så planlægger vi næste monumentale projekt sammen.
+    </p>
+    <a href="mailto:kontakt@muralia.dk?subject=Forespørgsel: Jens Stentoft" class="glow-btn px-8 py-4 text-xs uppercase tracking-widest text-gold inline-block">
+      Book Jens Stentoft via Bureauet
+    </a>
+  </div>
+</section>
+
+</body>
+</html>

@@ -53,9 +53,12 @@
   </div>
 </nav>
 
-<!-- HERO: The Agency -->
+<!-- HERO: Background Video Live -->
 <section id="agency" class="relative h-screen w-full flex items-center px-8 md:px-16 overflow-hidden">
-  <img src="725584167_1048809714166554_1633473090183491681_n.jpg" alt="Agency Background" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <!-- Video Tag der looper anonymt og dækker skærmen -->
+  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-25">
+    <source src="video.mp4" type="video/mp4">
+  </video>
   <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
   
   <div class="relative z-10 max-w-3xl pt-20">
@@ -68,7 +71,7 @@
   </div>
 </section>
 
-<!-- ROSTER: The Artists (The Hub structure he wants) -->
+<!-- ROSTER: The Artists -->
 <section id="kunstnere" class="py-24 px-8 md:px-16 border-t border-[var(--hairline)] bg-[#0d0d0d]">
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -82,7 +85,7 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <!-- Artist 1: Jens Stentoft -->
-      <div class="artist-card bg-[#0a0a0a] border border-[var(--hairline)] p-6 group cursor-pointer">
+      <a href="jens-stentoft.html" class="artist-card bg-[#0a0a0a] border border-[var(--hairline)] p-6 group cursor-pointer block hover:no-underline">
         <div class="h-64 overflow-hidden mb-6 relative">
           <img src="725032751_1528523512018280_8335387876143611394_n.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
         </div>
@@ -93,7 +96,7 @@
           <span>100+ projekter</span>
         </div>
         <div class="text-xs uppercase tracking-widest text-gold group-hover:text-ivory transition">Gå til kunstnerens underside &rarr;</div>
-      </div>
+      </a>
 
       <!-- Artist 2: Placeholder indicating growth -->
       <div class="artist-card flex flex-col items-center justify-center bg-[#0a0a0a] border border-dashed border-[var(--hairline)] p-6 min-h-[450px]">
@@ -106,7 +109,7 @@
   </div>
 </section>
 
-<!-- THE AGENCY GALLERY -->
+<!-- THE AGENCY GALLERY (Opdateret med de vilde AI værker!) -->
 <section id="galleri" class="py-24 px-8 md:px-16 bg-[#0a0a0a]">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-16">
@@ -115,6 +118,24 @@
     </div>
     
     <div class="masonry">
+      <!-- De nye AI-genererede mesterværker -->
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="12123124412ff.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="AGSAGDFASFAE.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="EGJNASKLGNWEÆFK.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="SGASGEFAECE.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="WhatsApp Image 2026-06-22 at 16.21.51.jpeg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      
+      <!-- Det originale gavl-materiale -->
       <div class="masonry-item overflow-hidden relative group">
         <img src="726431709_2153635502098565_6640533374163241531_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
       </div>
@@ -126,9 +147,6 @@
       </div>
       <div class="masonry-item overflow-hidden relative group">
         <img src="724869370_27189980407323786_6169065677793861642_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
-      </div>
-      <div class="masonry-item overflow-hidden relative group">
-        <img src="725598475_1632984811143616_235793481221623957_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
       </div>
     </div>
   </div>
