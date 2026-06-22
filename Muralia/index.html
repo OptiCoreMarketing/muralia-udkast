@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MURALIA — Eksklusivt Mural Art Bureau</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --gold: #D4AF6A;
+    --gold-deep: #8B7340;
+    --ivory: #F4F1EA;
+    --muted: #9C968A;
+    --hairline: rgba(212,175,106,0.18);
+  }
+  body {
+    background: var(--bg);
+    color: var(--ivory);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  .font-display { font-family: 'Playfair Display', serif; }
+  .text-gold { color: var(--gold); }
+  
+  /* Hover effects */
+  .glow-btn { border: 1px solid var(--gold-deep); transition: all 0.3s; }
+  .glow-btn:hover { box-shadow: 0 0 15px rgba(212,175,106,0.3); border-color: var(--gold); }
+  
+  .artist-card { transition: transform 0.4s; }
+  .artist-card:hover { transform: translateY(-5px); border-color: var(--gold-deep); }
+  
+  /* Masonry for gallery */
+  .masonry { column-count: 1; column-gap: 1.5rem; }
+  @media (min-width: 768px) { .masonry { column-count: 2; } }
+  @media (min-width: 1024px) { .masonry { column-count: 3; } }
+  .masonry-item { margin-bottom: 1.5rem; break-inside: avoid; display: inline-block; width: 100%; }
+  
+  .img-zoom { transition: transform 0.8s ease; }
+  .masonry-item:hover .img-zoom { transform: scale(1.03); }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="fixed w-full z-50 px-8 py-5 flex justify-between bg-[#0a0a0a]/90 backdrop-blur border-b border-[var(--hairline)]">
+  <div class="font-display text-xl tracking-widest">MURALIA<span class="text-gold">.</span></div>
+  <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest text-[var(--muted)]">
+    <a href="#agency" class="hover:text-ivory transition">Bureauet</a>
+    <a href="#kunstnere" class="hover:text-ivory transition">Kunstnere</a>
+    <a href="#galleri" class="hover:text-ivory transition">Portefølje</a>
+  </div>
+</nav>
+
+<!-- HERO: The Agency -->
+<section id="agency" class="relative h-screen w-full flex items-center px-8 md:px-16 overflow-hidden">
+  <img src="725584167_1048809714166554_1633473090183491681_n.jpg" alt="Agency Background" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
+  
+  <div class="relative z-10 max-w-3xl pt-20">
+    <p class="text-gold text-xs uppercase tracking-[0.3em] mb-4">Exclusive Mural Art Agency</p>
+    <h1 class="font-display text-5xl md:text-7xl leading-tight mb-6">Vi forvandler byrum til <br><span class="italic text-gold">Mesterværker.</span></h1>
+    <p class="text-[var(--muted)] text-lg mb-10 max-w-xl font-light">
+      MURALIA repræsenterer verdensklasse gadekunstnere og muralister. Vi er bindeleddet mellem visionære bygherrer, kommuner og de talenter, der skaber blivende, monumental kunst.
+    </p>
+    <a href="#kunstnere" class="glow-btn px-8 py-4 text-xs uppercase tracking-widest text-gold inline-block">Mød Vores Kunstnere</a>
+  </div>
+</section>
+
+<!-- ROSTER: The Artists (The Hub structure he wants) -->
+<section id="kunstnere" class="py-24 px-8 md:px-16 border-t border-[var(--hairline)] bg-[#0d0d0d]">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+      <div>
+        <p class="text-gold text-xs uppercase tracking-[0.3em] mb-2">Talent Kartotek</p>
+        <h2 class="font-display text-4xl">Eksklusivt Repræsenterede Kunstnere</h2>
+      </div>
+      <p class="text-[var(--muted)] text-sm max-w-xs mt-4 md:mt-0 font-light">Hver kunstner har deres eget unikke udtryk og deres egen dedikerede præsentation på vores platform.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Artist 1: Jens Stentoft -->
+      <div class="artist-card bg-[#0a0a0a] border border-[var(--hairline)] p-6 group cursor-pointer">
+        <div class="h-64 overflow-hidden mb-6 relative">
+          <img src="725032751_1528523512018280_8335387876143611394_n.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+        </div>
+        <h3 class="font-display text-2xl text-ivory mb-2">Jens Stentoft</h3>
+        <p class="text-[var(--muted)] text-sm mb-4">Specialist i stedspecifikke udsmykninger og monumentale gavlmalerier.</p>
+        <div class="flex justify-between text-xs text-[var(--muted)] mb-6 border-y border-[var(--hairline)] py-3">
+          <span>15+ års erfaring</span>
+          <span>100+ projekter</span>
+        </div>
+        <div class="text-xs uppercase tracking-widest text-gold group-hover:text-ivory transition">Gå til kunstnerens underside &rarr;</div>
+      </div>
+
+      <!-- Artist 2: Placeholder indicating growth -->
+      <div class="artist-card flex flex-col items-center justify-center bg-[#0a0a0a] border border-dashed border-[var(--hairline)] p-6 min-h-[450px]">
+        <div class="text-[var(--hairline)] text-6xl mb-4 font-light">+</div>
+        <h3 class="font-display text-xl text-[var(--muted)] mb-2">Ny Kunstner</h3>
+        <p class="text-[#555] text-sm text-center max-w-[250px]">Platformen er bygget til at skalere. Her vil den næste kunstner i stalden blive præsenteret med sin egen SEO-optimerede underside.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- THE AGENCY GALLERY -->
+<section id="galleri" class="py-24 px-8 md:px-16 bg-[#0a0a0a]">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs uppercase tracking-[0.3em] mb-2">Vores Aftryk</p>
+      <h2 class="font-display text-4xl">Bureauets Samlede Portefølje</h2>
+    </div>
+    
+    <div class="masonry">
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="726431709_2153635502098565_6640533374163241531_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="724731038_1648875576415131_1917913285295826037_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="724757544_1799921554301984_8528530118446548222_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="724869370_27189980407323786_6169065677793861642_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+      <div class="masonry-item overflow-hidden relative group">
+        <img src="725598475_1632984811143616_235793481221623957_n.jpg" class="w-full img-zoom border border-[var(--hairline)]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENCY FOOTER -->
+<footer class="py-20 border-t border-[var(--hairline)] text-center bg-[#050505]">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="font-display text-4xl mb-6">Skal vi forvandle jeres projekt?</h2>
+    <p class="text-[var(--muted)] text-sm mb-10 font-light">Kontakt bureauet for forespørgsler, og lad os finde den helt rigtige kunstner til at løfte jeres arkitektur.</p>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-xs uppercase tracking-widest text-gold mb-16">
+      <a href="mailto:kontakt@muralia.dk" class="hover:text-ivory transition">kontakt@muralia.dk</a>
+      <span class="hidden md:inline text-[var(--muted)]">|</span>
+      <a href="tel:+4593868334" class="hover:text-ivory transition">+45 93 86 83 34</a>
+    </div>
+    <div class="text-[#444] text-[10px] uppercase tracking-widest flex flex-col md:flex-row justify-between items-center border-t border-[#222] pt-8">
+      <span>© 2026 MURALIA Agency. All rights reserved.</span>
+      <span class="mt-4 md:mt-0">Udviklet af CoreHost Platform</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
