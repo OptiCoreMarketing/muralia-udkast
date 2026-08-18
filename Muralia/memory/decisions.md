@@ -13,3 +13,9 @@
   originale kamera-/opload-genererede navne. Begrundelse: projektet skal kunne
   skalere til flere kunstnere, og rodede filnavne gør det svært at
   vedligeholde referencer på tværs af flere kunstner-sider fremover.
+- **2026-08-18** — Sprogskift implementeret som client-side JS-toggle
+  (samme URL/side, knap skifter tekst) frem for separate `/en/`-`/da/`-sider.
+  Begrundelse: bekræftet med kunden — simplere at vedligeholde uden
+  build-værktøj, accepteret tradeoff at det er svagere til SEO end separate
+  sprog-URL'er. Bør genovervejes hvis internationalt Google-fund bliver en
+  prioritet senere.

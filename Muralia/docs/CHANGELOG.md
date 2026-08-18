@@ -1,5 +1,20 @@
 # Changelog
 
+## [Unreleased] - 2026-08-18 (2)
+
+### Tilføjet
+- Dansk/engelsk sprogskift tilføjet til begge sider (`index.html`,
+  `jens-stentoft.html`) via en DA/EN-knap i navigationen. Løsning: delt
+  `i18n.js`, der læser `data-i18n`-attributter og en per-side
+  `window.I18N`-oversættelsesordbog, og gemmer valgt sprog i `localStorage`
+  (`hom-lang`), så det huskes på tværs af sider.
+
+### Verificeret
+- Testet manuelt via lokal statisk server (`python -m http.server`) i
+  browser-preview: DA er default, EN-knap oversætter hele forsiden korrekt,
+  og sprogvalget følger med, når man navigerer videre til kunstner-siden
+  (bekræftet via `localStorage`-persistens).
+
 ## [Unreleased] - 2026-08-18
 
 ### Ændret
